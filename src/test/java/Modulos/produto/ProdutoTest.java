@@ -20,7 +20,7 @@ public class ProdutoTest {
     public void beforeEache() {
         // Configurando os dados da API Rest da lojinha
         baseURI = "http://165.227.93.41";
-        basePath = "/lojinha";
+        basePath = "/lojinha-bugada";
 
         Usuariopojo usuario = new Usuariopojo();
         usuario.setUuarioLogin("admin");
