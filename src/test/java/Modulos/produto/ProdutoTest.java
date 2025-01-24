@@ -1,7 +1,5 @@
 package Modulos.produto;
 
-import groovyjarjarantlr.Token;
-import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -9,7 +7,6 @@ import org.junit.jupiter.api.Test;
 import pojo.Usuariopojo;
 
 import static io.restassured.RestAssured.*;
-import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
 
 @DisplayName("Testes de API Rest do modulo de Produto")
@@ -20,7 +17,7 @@ public class ProdutoTest {
     public void beforeEache() {
         // Configurando os dados da API Rest da lojinha
         baseURI = "http://165.227.93.41";
-        basePath = "/lojinha-bugada";
+        basePath = "/lojinha";
 
         Usuariopojo usuario = new Usuariopojo();
         usuario.setUuarioLogin("admin");
